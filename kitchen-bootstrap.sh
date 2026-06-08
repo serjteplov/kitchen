@@ -2,7 +2,7 @@
 set -euo pipefail
 
 PROJECT_ROOT="${1:-kitchen}"
-BASE_PACKAGE="${2:-com/yourorg/kitchen}"
+BASE_PACKAGE="${2:-com/serg/kitchen}"
 BASE_PACKAGE_DOT="${BASE_PACKAGE//\//.}"
 
 mkdir -p "$PROJECT_ROOT"
@@ -325,7 +325,7 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint") version "13.1.0"
 }
 
-group = "com.yourorg"
+group = "com.serg"
 version = "0.0.1-SNAPSHOT"
 
 java {
