@@ -5,7 +5,6 @@ PROJECT_ROOT="${1:-kitchen}"
 BASE_PACKAGE="${2:-com/serg/kitchen}"
 BASE_PACKAGE_DOT="${BASE_PACKAGE//\//.}"
 
-mkdir -p "$PROJECT_ROOT"
 cd "$PROJECT_ROOT"
 
 mkdir -p \
@@ -467,7 +466,7 @@ EOF2
 
 chmod +x scripts/*.sh
 
-cat > ../output/kitchen-structure.txt <<EOF2
+cat > 1.txt <<EOF2
 kitchen/
 ├── .opencode/
 │   ├── agents/

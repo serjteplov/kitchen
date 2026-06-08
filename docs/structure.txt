@@ -1,0 +1,16 @@
+kitchen/
+├── .opencode/
+│   ├── agents/
+│   ├── hooks/
+│   ├── rules/
+│   ├── settings.json
+│   └── skills/
+├── docs/
+│   ├── adr/
+│   └── architecture/
+├── .github/workflows/
+├── gradle/wrapper/
+├── src/main/kotlin/com/serg/kitchen/
+├── src/main/resources/db/migration/
+├── src/test/kotlin/com/serg/kitchen/
+└── scripts/
