@@ -1,5 +1,0 @@
-{
-  "project": "kitchen",
-  "stack": ["kotlin", "spring-boot", "gradle"],
-  "notes": "OpenCode local project settings"
-}
