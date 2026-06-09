@@ -1,25 +1,47 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "instructions": [
-    "AGENTS.md",
-    "docs/SPEC.md",
-    "docs/adr/*.md",
-    "docs/architecture/*.md",
-    "docs/llm-workflow-handbook.md"
-  ],
-  "permission": {
-    "edit": "ask",
-    "bash": "ask",
-    "external_directory": "deny"
-  },
-  "compaction": {
-    "auto": true,
-    "reserved": 10000
-  },
-  "formatter": {
-    "ktlint": {
-      "command": ["./gradlew", "ktlintFormat"],
-      "extensions": [".kt", ".kts"]
+    "$schema": "https://opencode.ai/config.json",
+    "instructions": [
+        "AGENTS.md",
+        "docs/SPEC.md",
+        "docs/adr/*.md",
+        "docs/architecture/*.md",
+        "docs/llm-workflow-handbook.md"
+    ],
+    "shell": "/bin/zsh",
+    "permission": {
+        "edit": "ask",
+        "bash": "ask",
+        "external_directory": "deny"
+    },
+    "experimental": {
+        "hook": {
+            "session_completed": [
+                {
+                    "command": [
+                        "notify-send",
+                        "-u",
+                        "critical",
+                        "OpenCode",
+                        "Сессия завершена"
+                    ]
+                }
+            ]
+        }
+    },
+    "compaction": {
+        "auto": true,
+        "reserved": 10000
+    },
+    "formatter": {
+        "ktlint": {
+            "command": [
+                "./gradlew",
+                "ktlintFormat"
+            ],
+            "extensions": [
+                ".kt",
+                ".kts"
+            ]
+        }
     }
-  }
 }

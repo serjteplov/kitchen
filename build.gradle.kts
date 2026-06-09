@@ -47,6 +47,16 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
+tasks.register<Exec>("typecheckPlugins") {
+    description = "Type-check OpenCode plugin TypeScript files"
+    workingDir = file(".opencode")
+    commandLine("npx", "tsc", "--noEmit")
+}
+
+tasks.named("check") {
+    dependsOn("typecheckPlugins")
+}
+
 kotlin {
     jvmToolchain(21)
 }
