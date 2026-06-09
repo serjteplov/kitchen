@@ -4,8 +4,7 @@
         "AGENTS.md",
         "docs/SPEC.md",
         "docs/adr/*.md",
-        "docs/architecture/*.md",
-        "docs/llm-workflow-handbook.md"
+        "docs/architecture/*.md"
     ],
     "shell": "/bin/zsh",
     "permission": {
