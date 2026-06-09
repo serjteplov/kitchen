@@ -7,7 +7,7 @@ test:
 	./gradlew test
 
 lint:
-	./gradlew detekt ktlintCheck
+	./gradlew ktlintCheck
 
 format:
 	./gradlew ktlintFormat

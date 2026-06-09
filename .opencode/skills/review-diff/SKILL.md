@@ -1,2 +1,3 @@
 # review-diff
-Project-specific OpenCode skill placeholder.
+Review code changes against SPEC, ADRs, and repository rules. Check for correctness, design adherence, maintainability, and test coverage.
+

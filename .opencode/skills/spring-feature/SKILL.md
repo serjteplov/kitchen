@@ -1,2 +1,3 @@
 # spring-feature
-Project-specific OpenCode skill placeholder.
+Implement a vertical slice: domain entity -> application port -> application service -> adapter controller/repository -> tests.
+

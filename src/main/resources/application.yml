@@ -1,6 +1,9 @@
 spring:
   application:
     name: kitchen
+  h2:
+    console:
+      enabled: true
 management:
   endpoints:
     web:

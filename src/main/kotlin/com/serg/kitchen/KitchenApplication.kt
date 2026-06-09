@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class KitchenApplication
 
 fun main(args: Array<String>) {
-	runApplication<KitchenApplication>(*args)
+    runApplication<KitchenApplication>(*args)
 }
