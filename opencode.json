@@ -7,29 +7,62 @@
         "docs/architecture/*.md"
     ],
     "shell": "/bin/zsh",
+    "share": "manual",
+    "autoupdate": "notify",
+    "snapshot": true,
+    "lsp": true,
+    "enabled_providers": [
+        "anthropic",
+        "openai"
+    ],
     "permission": {
         "edit": "ask",
-        "bash": "ask",
-        "external_directory": "deny"
-    },
-    "experimental": {
-        "hook": {
-            "session_completed": [
-                {
-                    "command": [
-                        "notify-send",
-                        "-u",
-                        "critical",
-                        "OpenCode",
-                        "Сессия завершена"
-                    ]
-                }
-            ]
+        "write": "ask",
+        "webfetch": "allow",
+        "skill": {
+            "*": "allow"
+        },
+        "external_directory": "deny",
+        "bash": {
+            "pwd": "allow",
+            "ls *": "allow",
+            "find *": "allow",
+            "fd *": "allow",
+            "rg *": "allow",
+            "grep *": "allow",
+            "cat *": "allow",
+            "sed *": "allow",
+            "awk *": "allow",
+            "git status*": "allow",
+            "git diff*": "allow",
+            "git log*": "allow",
+            "git show*": "allow",
+            "./gradlew tasks*": "allow",
+            "./gradlew test*": "allow",
+            "./gradlew check*": "allow",
+            "./gradlew build*": "allow",
+            "./gradlew clean build*": "allow",
+            "./gradlew ktlintCheck*": "allow",
+            "./gradlew ktlintFormat*": "allow",
+            "./gradlew bootRun*": "ask",
+            "docker ps*": "allow",
+            "docker compose ps*": "allow",
+            "docker compose logs*": "allow",
+            "docker compose up*": "ask",
+            "docker compose down*": "ask",
+            "kubectl get *": "allow",
+            "kubectl describe *": "allow",
+            "kubectl logs *": "allow",
+            "rm *": "ask",
+            "rm -rf *": "deny",
+            "sudo *": "deny",
+            "*": "ask"
         }
     },
     "compaction": {
         "auto": true,
-        "reserved": 10000
+        "prune": true,
+        "reserved": 12000
     },
     "formatter": {
         "ktlint": {
@@ -41,6 +74,31 @@
                 ".kt",
                 ".kts"
             ]
+        }
+    },
+    "watcher": {
+        "ignore": [
+            "**/.git/**",
+            "**/.gradle/**",
+            "**/build/**",
+            "**/out/**",
+            "**/target/**",
+            "**/.idea/**",
+            "**/.kotlin/**",
+            "**/.direnv/**",
+            "**/node_modules/**",
+            "**/coverage/**",
+            "**/dist/**",
+            "**/tmp/**",
+            "**/*.log"
+        ]
+    },
+    "attachment": {
+        "image": {
+            "auto_resize": true,
+            "max_width": 2000,
+            "max_height": 2000,
+            "max_base64_bytes": 5242880
         }
     }
 }
