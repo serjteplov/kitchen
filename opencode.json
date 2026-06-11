@@ -13,8 +13,9 @@
     "lsp": true,
 
     "permission": {
-        "edit": "ask",
-        "write": "ask",
+        "*": "allow",
+        "edit": "allow",
+        "write": "allow",
         "webfetch": "allow",
         "skill": {
             "*": "allow"
@@ -22,6 +23,7 @@
         "external_directory": "deny",
         "bash": {
             "pwd": "allow",
+            "npx *": "allow",
             "ls *": "allow",
             "find *": "allow",
             "fd *": "allow",
@@ -34,6 +36,8 @@
             "git diff*": "allow",
             "git log*": "allow",
             "git show*": "allow",
+            "git commit*": "ask",
+            "git push*": "ask",
             "./gradlew tasks*": "allow",
             "./gradlew test*": "allow",
             "./gradlew check*": "allow",
@@ -51,9 +55,23 @@
             "kubectl describe *": "allow",
             "kubectl logs *": "allow",
             "rm *": "ask",
+            "sudo *": "ask",
             "rm -rf *": "deny",
-            "sudo *": "deny",
-            "*": "ask"
+            "rm -fr *": "deny",
+            "rm -rf /": "deny",
+            "rm -rf .": "deny",
+            "mv *": "ask",
+            "chmod -R 777": "ask",
+            "chown -R": "ask",
+            "dd if=*": "ask",
+            "mkfs*": "ask",
+            "shutdown": "deny",
+            "reboot": "deny",
+            "killall": "ask",
+            "pkill": "allow",
+            "curl * | sh": "ask",
+            "wget * | sh": "ask",
+            "*": "allow"
         }
     },
     "compaction": {
@@ -99,3 +117,4 @@
         }
     }
 }
+
