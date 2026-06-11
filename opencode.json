@@ -11,10 +11,7 @@
     "autoupdate": "notify",
     "snapshot": true,
     "lsp": true,
-    "enabled_providers": [
-        "anthropic",
-        "openai"
-    ],
+
     "permission": {
         "edit": "ask",
         "write": "ask",
