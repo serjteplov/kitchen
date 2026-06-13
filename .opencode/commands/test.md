@@ -1,6 +1,6 @@
 ---
 description: Run tests for the kitchen project
-agent: build
+agent: tester
 ---
 
 Run the tests for the kitchen project:

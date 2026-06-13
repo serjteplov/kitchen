@@ -1,6 +1,6 @@
 ---
 description: Review the last commit as a strict senior engineer
-agent: senior-reviewer
+agent: reviewer
 ---
 
 Analyze the last commit and provide a comprehensive code review:
