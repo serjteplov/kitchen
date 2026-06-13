@@ -11,9 +11,7 @@
     "autoupdate": "notify",
     "snapshot": true,
     "lsp": true,
-
     "permission": {
-        "*": "allow",
         "edit": "allow",
         "write": "allow",
         "webfetch": "allow",

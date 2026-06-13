@@ -1,4 +1,7 @@
 import type {Plugin} from "@opencode-ai/plugin"
+import { appendFile } from "node:fs/promises"
+
+const EVENT_LOG = "/tmp/opencode/attention-events.log"
 
 function buildMessage(type: string, pattern?: string | string[]): string {
     return [
@@ -16,10 +19,18 @@ function buildMessage(type: string, pattern?: string | string[]): string {
 export const AttentionNotifyPlugin: Plugin = async ({$}) => {
     return {
         event: async ({event}) => {
-            // The binary emits "permission.asked" at runtime but the v1 SDK
-            // types name this event "permission.updated". Cast to access it.
             const evt = event as { type: string; properties?: Record<string, unknown> }
-            if (evt.type === "permission.asked" && evt.properties) {
+
+            // DEBUG: log every event type to discover which permission event fires
+            appendFile(EVENT_LOG, `${new Date().toISOString()} ${evt.type}\n`).catch(() => {})
+
+            if (
+                (evt.type === "permission.asked" ||
+                 evt.type === "permission.v2.asked" ||
+                 evt.type === "permission.updated" ||
+                 evt.type === "permission.prompt.fullscreen") &&
+                evt.properties
+            ) {
                 const type = (evt.properties.type as string) ?? "unknown"
                 const pattern = evt.properties.pattern as string | string[] | undefined
                 const message = buildMessage(type, pattern)
