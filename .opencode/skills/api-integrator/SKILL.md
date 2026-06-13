@@ -1,6 +1,15 @@
 ---
 name: api-integrator
 description: Add REST endpoints following hexagonal architecture. Define application ports first, then implement thin REST controllers in the adapter layer.
+triggers:
+  - "REST endpoint"
+  - "add REST"
+  - "new API"
+  - "HTTP endpoint"
+  - "expose endpoint"
+  - "create controller"
+  - "REST controller"
+  - "API endpoint"
 ---
 
 ## What I do

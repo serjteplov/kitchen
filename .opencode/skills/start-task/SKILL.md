@@ -1,6 +1,14 @@
 ---
 name: start-task
 description: Read SPEC.md, relevant ADRs, and existing source files. Produce a plan with the files to create or modify, then implement and verify.
+triggers:
+  - "start a new task"
+  - "new task"
+  - "plan the work"
+  - "what should I implement"
+  - "where to start"
+  - "bootstrapping"
+  - "begin working on"
 ---
 
 ## What I do
@@ -16,6 +24,7 @@ Helps avoid guesswork and ensures context is loaded before coding.
 
 ## Rules
 - Restate the goal in 1-2 sentences before proposing a plan
+- Ask questions to clarify requirements if needed before planning
 - Propose 3-5 steps maximum
 - Execute only one step at a time, verify, then continue
 - DO NOT mix refactoring with feature work
