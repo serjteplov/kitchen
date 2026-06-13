@@ -1,17 +1,6 @@
 ---
 name: spring-feature
 description: "Implement a vertical slice: domain entity -> application port -> application service -> adapter controller/repository -> tests."
-triggers:
-  - "new feature"
-  - "create feature"
-  - "greenfield"
-  - "from scratch"
-  - "new entity"
-  - "implement feature"
-  - "build feature"
-  - "create new endpoint"
-  - "new domain model"
-  - "new REST resource"
 ---
 
 ## What I do

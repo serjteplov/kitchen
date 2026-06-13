@@ -1,15 +1,6 @@
 ---
 name: adr-writer
 description: Create and maintain Architecture Decision Records. Generate from templates, update existing ADRs, and verify code matches documented decisions.
-triggers:
-  - "ADR"
-  - "architecture decision"
-  - "decision record"
-  - "document decision"
-  - "create ADR"
-  - "record decision"
-  - "architectural decision"
-  - "record architecture"
 ---
 
 ## What I do

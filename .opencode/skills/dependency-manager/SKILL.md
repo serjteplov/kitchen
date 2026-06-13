@@ -1,17 +1,6 @@
 ---
 name: dependency-manager
 description: "Manage Gradle dependencies: add, update, remove, resolve conflicts, check vulnerabilities, and maintain the version catalog."
-triggers:
-  - "add dependency"
-  - "update dependency"
-  - "upgrade version"
-  - "Gradle dependency"
-  - "version catalog"
-  - "dependency conflict"
-  - "remove dependency"
-  - "build.gradle"
-  - "add library"
-  - "dependency tree"
 ---
 
 ## What I do

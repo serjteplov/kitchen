@@ -1,17 +1,6 @@
 ---
 name: implement-feature-slice
-description: Add or modify a small, surgical slice within existing architecture. Unlike spring-feature (greenfield), this skill modifies existing code: add a field, endpoint, service method, or migration.
-triggers:
-  - "add field to"
-  - "add method to"
-  - "modify existing"
-  - "extend entity"
-  - "add to controller"
-  - "add column"
-  - "update entity"
-  - "add property"
-  - "add parameter"
-  - "add validation"
+description: "Add or modify a small, surgical slice within existing architecture. Unlike spring-feature (greenfield), this skill modifies existing code: add a field, endpoint, service method, or migration."
 ---
 
 ## What I do

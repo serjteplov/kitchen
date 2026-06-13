@@ -1,17 +1,6 @@
 ---
 name: db-migration
 description: Create Flyway migrations in src/main/resources/db/migration/ using semantic versioning.
-triggers:
-  - "migration"
-  - "Flyway"
-  - "schema change"
-  - "new table"
-  - "add table"
-  - "alter table"
-  - "database migration"
-  - "V__"
-  - "create index"
-  - "add constraint"
 ---
 
 ## What I do

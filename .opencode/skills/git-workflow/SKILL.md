@@ -1,18 +1,6 @@
 ---
 name: git-workflow
-description: Manage git operations: atomic commits with conventional messages, branch creation, PR preparation, and pre-commit safety checks.
-triggers:
-  - "commit"
-  - "git commit"
-  - "create branch"
-  - "pull request"
-  - "open PR"
-  - "push"
-  - "stage"
-  - "branch off"
-  - "make a commit"
-  - "commit this"
-  - "prepare PR"
+description: "Manage git operations: atomic commits with conventional messages, branch creation, PR preparation, and pre-commit safety checks."
 ---
 
 ## What I do

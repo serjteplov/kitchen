@@ -1,17 +1,6 @@
 ---
 name: explore-codebase
 description: Explore and understand existing code before making changes. Search for patterns, trace dependencies, and produce structured summaries — read-only, no edits.
-triggers:
-  - "explore the code"
-  - "find in codebase"
-  - "where is"
-  - "how does it work"
-  - "show me where"
-  - "look up"
-  - "search code"
-  - "trace the flow"
-  - "what is the structure"
-  - "find references to"
 ---
 
 ## What I do

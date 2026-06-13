@@ -1,19 +1,6 @@
 ---
 name: refactor-small-safe
-description: Perform small, safe refactoring operations: rename, extract, move, inline. Each change is verified immediately — compile, tests, architecture rules.
-triggers:
-  - "rename"
-  - "refactor"
-  - "extract method"
-  - "extract interface"
-  - "move class"
-  - "move package"
-  - "inline"
-  - "restructure"
-  - "change signature"
-  - "reorder parameters"
-  - "pull up"
-  - "push down"
+description: "Perform small, safe refactoring operations: rename, extract, move, inline. Each change is verified immediately — compile, tests, architecture rules."
 ---
 
 ## What I do

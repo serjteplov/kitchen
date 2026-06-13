@@ -1,17 +1,6 @@
 ---
 name: test-writer
 description: Write unit, integration, and smoke tests following project conventions. Covers domain logic, adapter behavior, and edge cases.
-triggers:
-  - "write test"
-  - "add tests"
-  - "add test coverage"
-  - "missing tests"
-  - "write unit test"
-  - "write integration test"
-  - "write smoke test"
-  - "test this"
-  - "add regression test"
-  - "add edge case test"
 ---
 
 ## What I do

@@ -1,17 +1,6 @@
 ---
 name: logging-tracing
 description: Set up structured logging, MDC context propagation, correlation IDs, and request/response observability for debugging in production.
-triggers:
-  - "logging"
-  - "log format"
-  - "correlation ID"
-  - "MDC"
-  - "structured logging"
-  - "tracing"
-  - "observability"
-  - "logback"
-  - "log level"
-  - "request logging"
 ---
 
 ## What I do

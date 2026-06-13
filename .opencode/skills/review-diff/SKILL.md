@@ -1,15 +1,6 @@
 ---
 name: review-diff
 description: Review code changes against SPEC, ADRs, and repository rules. Check for correctness, design adherence, maintainability, and test coverage.
-triggers:
-  - "review my changes"
-  - "code review"
-  - "review diff"
-  - "check my code"
-  - "review this change"
-  - "audit changes"
-  - "verify my work"
-  - "is this correct"
 ---
 
 ## What I do

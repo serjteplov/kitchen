@@ -1,17 +1,6 @@
 ---
 name: error-handler
 description: "Implement consistent error handling: domain exceptions, global exception handler, Problem Details (RFC 7807) responses, and validation error mapping."
-triggers:
-  - "error handling"
-  - "exception handler"
-  - "error response"
-  - "Problem Details"
-  - "ControllerAdvice"
-  - "ExceptionHandler"
-  - "global error"
-  - "exception hierarchy"
-  - "validation error"
-  - "handle errors"
 ---
 
 ## What I do

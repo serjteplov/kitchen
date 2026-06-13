@@ -1,19 +1,6 @@
 ---
 name: infra-setup
-description: Set up Spring infrastructure: configuration classes, properties/YAML, security, CORS, scheduling, caching, and cross-cutting bean definitions.
-triggers:
-  - "configure"
-  - "configuration"
-  - "Spring config"
-  - "security config"
-  - "CORS"
-  - "scheduling"
-  - "caching"
-  - "application.yml"
-  - "properties"
-  - "@Configuration"
-  - "set up Spring"
-  - "bean definition"
+description: "Set up Spring infrastructure: configuration classes, properties/YAML, security, CORS, scheduling, caching, and cross-cutting bean definitions."
 ---
 
 ## What I do
