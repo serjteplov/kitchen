@@ -12,7 +12,12 @@
     "snapshot": true,
     "lsp": true,
     "permission": {
-        "edit": "allow",
+        "edit": {
+            "*": "ask",
+            "src/**": "allow",
+            "test/**": "allow",
+            "*.md": "allow"
+        },
         "write": "allow",
         "webfetch": "allow",
         "skill": {
@@ -69,7 +74,7 @@
             "pkill": "allow",
             "curl * | sh": "ask",
             "wget * | sh": "ask",
-            "*": "allow"
+            "*": "ask"
         }
     },
     "compaction": {
