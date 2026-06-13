@@ -36,16 +36,16 @@ export const AttentionNotifyPlugin: Plugin = async ({$}) => {
                 const message = buildMessage(type, pattern)
                 try {
                     await $`notify-send -u critical -i dialog-warning "OpenCode" ${message}`
-                } catch (err) {
-                    console.error("[attention-notify] Failed to send permission notification:", err)
+                } catch {
+                    // silently ignore — shell error should not reach terminal
                 }
             }
 
             if (event.type === "session.idle") {
                 try {
                     await $`notify-send -u normal "OpenCode" "Session is idle — waiting for input"`
-                } catch (err) {
-                    console.error("[attention-notify] Failed to send idle notification:", err)
+                } catch {
+                    // silently ignore — shell error should not reach terminal
                 }
             }
         },
